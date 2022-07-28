@@ -1,0 +1,10 @@
+body {
+    background-color: bisque;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    color: brown;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

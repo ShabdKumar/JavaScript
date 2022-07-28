@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(202, 227, 166);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.First {
+    color: rgb(220, 28, 28);
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+#your-name {
+    background-color: aquamarine;
+    border: 2px dashed green;
+    width: 400px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    background-color: yellowgreen;
+}
+
+#your-name h2 {
+    color: brown;
+}
+
+#course-image {
+    width: 400px;
+}
