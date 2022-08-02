@@ -115,3 +115,35 @@ let averageAge = ageShabd + ageAkash / 2;
 console.log(averageAge); // 38.5
 averageAge = (ageShabd + ageAkash) / 2;
 console.log(averageAge); // 25
+
+
+/* Strings and Template Literals: */
+
+const fullName = "Shabd Kumar";
+const yearOfBirth = 1995;
+const ongoingJob = "Assosiate Software Engineer";
+const presentYear = 2022;
+
+// strings
+const details = "I'm " + fullName + ", a " + (presentYear - yearOfBirth) + " year old " + ongoingJob;
+console.log(details); // I'm Shabd Kumar, a 27 year old Assosiate Software Engineer
+
+// template literals
+const detailsNew = `I'm ${fullName}, a ${presentYear - yearOfBirth} year old ${ongoingJob}`;
+console.log(detailsNew); // I'm Shabd Kumar, a 27 year old Assosiate Software Engineer
+
+console.log(`Just a regular statement...`); // Just a regular statement...
+
+// multiple lines statement
+
+console.log("This is not \n\ a proper way \n\ to handle multiple line.");
+/* This is not 
+ a proper way 
+ to handle multiple line. */
+
+ console.log(`This is the
+ proper way
+ to handle multiple line.`)
+ /* This is the
+ proper way
+ to handle multiple line. */
