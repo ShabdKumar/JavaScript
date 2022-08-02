@@ -55,8 +55,8 @@ console.log(age);
 //const
 const birthYear = 1995;
 console.log(birthYear);
-//birthYear = 2000; //Error statement: Uncaught TypeError: Assignment to constant variable
-//const birthYear1; //Error statement: Uncaught SyntaxError: Missing initializer in const declaration
+//birthYear = 2000; //Uncaught TypeError: Assignment to constant variable
+//const birthYear1; //Uncaught SyntaxError: Missing initializer in const declaration
 //var
 var job = "Engineer";
 job = "Unemployed";
