@@ -9,9 +9,9 @@ console.log("--------------------------------");
 let country = "India";
 let continent = "Asia";
 let population = 1417;
-console.log("Country Name: " + country);
-console.log("Continent Name: " + continent);
-console.log("Population of " + country + ": " + population);
+console.log(country); // India
+console.log(continent); // Asia
+console.log(population); // 1417
 
 /* Data Types
 1. Declare a variable called 'isIsland' and set its value according to your
@@ -25,10 +25,10 @@ console.log("----------------------");
 
 let isIsland = false;
 let language;
-console.log(typeof isIsland);
-console.log(typeof population);
-console.log(typeof country);
-console.log(typeof language);
+console.log(typeof isIsland); // boolean
+console.log(typeof population); // number
+console.log(typeof country); // string
+console.log(typeof language); // undefined
 
 /* let, const and var
 1. Set the value of 'language' to the language spoken where you live (some
@@ -44,4 +44,34 @@ language = "Hindi";
 const country1 = "India";
 const continent1 = "Asia";
 const isIsland1 = false;
-isIsland1 = true; //Uncaught TypeError: Assignment to constant variable
+//isIsland1 = true; //Uncaught TypeError: Assignment to constant variable
+
+/* Basic Operators
+1. If your country split in half, and each half would contain half the population,
+then how many people would live in each half?
+2. Increase the population of your country by 1 and log the result to the console
+3. Finland has a population of 6 million. Does your country have more people than
+Finland?
+4. The average population of a country is 33 million people. Does your country
+have less people than the average country?
+5. Based on the variables you created, create a new variable 'description'
+which contains a string with this format: 'Portugal is in Europe, and its 11 million
+people speak portuguese */
+
+console.log("Assessment: Basic Operators");
+console.log("---------------------------");
+
+const splitPopulation = population / 2;
+console.log(splitPopulation); // 708.5
+
+population++;
+console.log(population); // 1418
+
+const populationFinland = 6;
+console.log(population > populationFinland); // true
+
+const avgPopulation = 33;
+console.log(population < avgPopulation); // false
+
+const description = country + " is in " + continent + ", and its " + population + " million people speak " + language;
+console.log(description); // India is in Asia, and its 1418 million people speak Hindi

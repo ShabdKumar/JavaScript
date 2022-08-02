@@ -69,7 +69,7 @@ var job = "Engineer";
 job = "Unemployed";
 console.log(job);
 
-//withoout declaration
+//without declaration
 lastName = "Sahu";
 console.log(lastName);
 
