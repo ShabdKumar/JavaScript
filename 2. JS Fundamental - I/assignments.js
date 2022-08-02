@@ -73,5 +73,16 @@ console.log(population > populationFinland); // true
 const avgPopulation = 33;
 console.log(population < avgPopulation); // false
 
-const description = country + " is in " + continent + ", and its " + population + " million people speak " + language;
+let description = country + " is in " + continent + ", and its " + population + " million people speak " + language;
 console.log(description); // India is in Asia, and its 1418 million people speak Hindi
+
+
+/* Strings and Template Literals
+1. Recreate the 'description' variable from the last assignment, this time
+using the template literal syntax */
+
+console.log("Assessment: Strings and Template Literals");
+console.log("---------------------------");
+
+description = `${country} is in ${continent}, and it's ${population} million people speak ${language}`;
+console.log(description); // India is in Asia, and it's 1418 million people speak Hindi
