@@ -3,12 +3,29 @@
 assign their values according to your own country(population in millions)
 2. Log their values to the console */
 
-// console.log("Assessment: Values and Variables");
-// console.log("--------------------------------")
+console.log("Assessment: Values and Variables");
+console.log("--------------------------------");
 
-// let country = "India";
-// let continent = "Asia";
-// let population = "1,417 M";
-// console.log("Country Name: " + country);
-// console.log("Continent Name: " + continent);
-// console.log("Population of " + country + ": " + population);
+let country = "India";
+let continent = "Asia";
+let population = 1417;
+console.log("Country Name: " + country);
+console.log("Continent Name: " + continent);
+console.log("Population of " + country + ": " + population);
+
+/* Data Types
+1. Declare a variable called 'isIsland' and set its value according to your
+country. The variable should hold a Boolean value. Also declare a variable
+'language', but don't assign it any value yet
+2. Log the types of 'isIsland', 'population', 'country' and 'language'
+to the console */
+
+console.log("Assessment: Data Types");
+console.log("----------------------");
+
+let isIsland = false;
+let language;
+console.log(typeof isIsland);
+console.log(typeof population);
+console.log(typeof country);
+console.log(typeof language);
