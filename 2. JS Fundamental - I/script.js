@@ -1,7 +1,7 @@
 let js = "amazing";
 // if (js == 'amazing') alert("JavaScript is Fun!");
 console.log(40 + 30 - 29); // 41
-let result = 40 + 30 - 29 ;
+let result = 40 + 30 - 29;
 console.log(result); // 41
 console.log(js); // amazing
 
@@ -25,7 +25,7 @@ console.log(firstJob); // Associate Software Engineer
 
 /* Data Types: */
 
-let javascriptIsFun = true; 
+let javascriptIsFun = true;
 console.log(javascriptIsFun); // true
 //boolean type
 console.log(typeof javascriptIsFun); // boolean
@@ -91,8 +91,8 @@ console.log(Name + 2); // Shabd2
 let x = 10 + 5;
 x += 10; /* x += 10 means x = x + 10; */
 x *= 4; /* x *= 4 means x = x * 4; */
-x++; /* x++ menas x = x + 1; */
-x--; /* x-- menas x = x - 1; */
+x++; /* x++ means x = x + 1; */
+x--; /* x-- means x = x - 1; */
 x--;
 console.log(x); // 99
 
@@ -141,9 +141,9 @@ console.log("This is not \n\ a proper way \n\ to handle multiple line.");
  a proper way 
  to handle multiple line. */
 
- console.log(`This is the
- proper way
- to handle multiple line.`)
+console.log(`This is the
+proper way
+to handle multiple line.`)
  /* This is the
- proper way
- to handle multiple line. */
+proper way
+to handle multiple line. */
