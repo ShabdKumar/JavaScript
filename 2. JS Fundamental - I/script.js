@@ -21,55 +21,56 @@ let firstJob = "Associate Software Engineer";
 let currentJob = "FrontEndDeveloper";
 let job1 = "Associate Software Engineer";
 let job2 = "FrontEndDeveloper";
+let _first = "name";
 console.log(firstJob); // Associate Software Engineer
 
 /* Data Types: */
 
 let javascriptIsFun = true;
 console.log(javascriptIsFun); // true
-//boolean type
+// boolean type
 console.log(typeof javascriptIsFun); // boolean
 console.log(typeof true); // boolean
-//String type
+// String type
 console.log(typeof "true"); // string
-//number type
+// number type
 console.log(typeof 35); // number
 
-//dynamic type
+// dynamic type
 console.log(typeof javascriptIsFun); // boolean
 javascriptIsFun = "Yes!";
 console.log(typeof javascriptIsFun); // string
 
-//undefined type
+// undefined type
 let year;
 console.log(year); // undefined
 console.log(typeof year); // undefined
 year = 1995;
 console.log(typeof year); // number
 
-//null type
+// null type
 console.log(null); // null
 console.log(typeof null); // object /*bug in javascript: showing object type*/
 
 /* let, const & var keywords: */
 
-//let keyword
+// let keyword
 let age = 30;
 age = 31;
 console.log(age); // 31
 
-//const keyword
+// const keyword
 const birthYear = 1995;
 console.log(birthYear); // 1995
-//birthYear = 2000; //Uncaught TypeError: Assignment to constant variable
-//const birthYear1; //Uncaught SyntaxError: Missing initializer in const declaration
+// birthYear = 2000; //Uncaught TypeError: Assignment to constant variable
+// const birthYear1; //Uncaught SyntaxError: Missing initializer in const declaration
 
-//var keyword
+// var keyword
 var job = "Engineer";
 job = "Unemployed";
 console.log(job); // Unemployed
 
-//without declaration
+// without declaration
 lastName = "Sahu";
 console.log(lastName); // Sahu
 
@@ -87,7 +88,7 @@ const sirName = "Sahu";
 console.log(Name + " " + sirName); // Shabd Sahu
 console.log(Name + 2); // Shabd2
 
-//Assignment Operators
+// Assignment Operators
 let x = 10 + 5;
 x += 10; /* x += 10 means x = x + 10; */
 x *= 4; /* x *= 4 means x = x * 4; */
@@ -96,7 +97,7 @@ x--; /* x-- means x = x - 1; */
 x--;
 console.log(x); // 99
 
-//Comparison Operators >, <, >=, <=
+// Comparison Operators >, <, >=, <=
 console.log(ageShabd > ageAkash); // true
 console.log(ageAkash >= 21); // true
 const isMarriageAge = ageAkash >= 21;
@@ -147,3 +148,24 @@ to handle multiple line.`)
  /* This is the
 proper way
 to handle multiple line. */
+
+// Taking Decisions: if / else Statements
+
+const personAge = 15;
+
+if (personAge >= 18) {
+    console.log("Sarah can start driving 🚗");
+} else {
+    console.log(`You need to wait ${18 - personAge} years to get driving licence.`)
+}
+
+const birthYear = 1992;
+
+let century;
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+
+console.log(`You were born in ${century} century.`)
