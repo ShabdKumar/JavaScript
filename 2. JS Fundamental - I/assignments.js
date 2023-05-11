@@ -97,7 +97,7 @@ minus the country's population)
 130. See the different results, and set the population back to original */
 
 if (population >= 33) {
-    console.log(`${country}'s population is above average`);
+    console.log(`${country}'s population is above average`);    // India's population is above average
 } else {
     console.log(`${country}'s population is ${33 - population} million below average`);
 }
@@ -108,13 +108,35 @@ population = 13;
 if (population >= 33) {
     console.log(`${country}'s population is above average`);
 } else {
-    console.log(`${country}'s population is ${33 - population} million below average`);
+    console.log(`${country}'s population is ${33 - population} million below average`); // India's population is 20 million below average.
 }
 population = 130;
 if (population >= 33) {
-    console.log(`${country}'s population is above average`);
+    console.log(`${country}'s population is above average`);    // India's population is above average
 } else {
     console.log(`${country}'s population is ${33 - population} million below average`);
 }
 
 population = temp;
+
+
+/* Type Conversion and Coercion
+1. Predict the result of these 5 operations without executing them:
+'9' - '5';
+'19' - '13' + '17';
+'19' - '13' + 17;
+'123' < 57;
+5 + 6 + '4' + 9 - 4 - 2;
+2. Execute the operations to check if you were right */
+
+'9' - '5';  // 4
+'19' - '13' + '17'; // 617
+'19' - '13' + 17;   // 23
+'123' < 57; // false
+5 + 6 + '4' + 9 - 4 - 2;    // 1143
+
+console.log('9' - '5'); // 4
+console.log('19' - '13' + '17');    // 617
+console.log('19' - '13' + 17);  // 23
+console.log('123' < 57);    // false
+console.log(5 + 6 + '4' + 9 - 4 - 2);   // 1143

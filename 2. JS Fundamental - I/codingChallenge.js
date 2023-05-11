@@ -49,7 +49,7 @@ is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark
 BMI (28.3) is higher than John's (23.9)!" */
 
 if (mark1BMI > john1BMI) {
-    console.log(`Mark's BMI is higher than John's!`);
+    console.log(`Mark's BMI is higher than John's!`);   // Mark's BMI is higher than John's!
 } else {
     console.log(`John's BMI is higher than Mark's!`);
 }
@@ -57,5 +57,5 @@ if (mark1BMI > john1BMI) {
 if (mark2BMI > john2BMI) {
     console.log(`Mark's BMI ${mark2BMI} is higher than John's ${john2BMI}!`);
 } else {
-    console.log(`John's BMI ${john2BMI} is higher than Mark's ${mark2BMI}!`);
+    console.log(`John's BMI ${john2BMI} is higher than Mark's ${mark2BMI}!`);   // John's BMI 27.44059917355372 is higher than Mark's 26.87867813490267!
 }

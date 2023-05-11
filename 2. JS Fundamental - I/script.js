@@ -149,14 +149,14 @@ to handle multiple line.`)
 proper way
 to handle multiple line. */
 
-// Taking Decisions: if / else Statements
+/* Taking Decisions: if / else Statements */
 
 const personAge = 15;
 
 if (personAge >= 18) {
-    console.log("Sarah can start driving 🚗");
+    console.log("Sarah can start driving 🚗");   
 } else {
-    console.log(`You need to wait ${18 - personAge} years to get driving licence.`)
+    console.log(`You need to wait ${18 - personAge} more years to get driving licence.`) // You need to wait 3 more years to get driving licence.
 }
 
 const birthYear = 1992;
@@ -168,4 +168,90 @@ if (birthYear <= 2000) {
     century = 21;
 }
 
-console.log(`You were born in ${century} century.`)
+console.log(`You were born in ${century} century.`) // You were born in 20 century.
+
+
+/* Type Conversion and Type Coercion */
+
+// Type Conversion
+
+const birthYear = "1992";
+
+console.log(birthYear + 18);    // 199218
+console.log(Number(birthYear) + 18, birthYear);    // 2010 '1992'
+console.log(birthYear);  // 1992
+
+console.log(Number("Jonas"));   // NaN
+console.log(typeof NaN);    // number
+
+console.log(String(23), 23);    // 23 23
+
+// Type Coercion
+
+console.log("I'm " + 28 + " years old.");   // I'm 28 years old.
+console.log("I'm " + "28" + " years old."); // I'm 28 years old.
+console.log("23" - "10" - 3);   // 10
+console.log("23" - "10" - "3"); // 10
+console.log("23" + "10" + 3);   // 23103
+console.log("23" * 2);  // 46
+console.log("23" * "2");    // 46
+console.log("23" / 2);  // 11.5
+console.log("23" / "2");    // 11.5
+
+let n = "1" + 1;    /* '11' */
+n = n + 1;          /* '111' */
+n = n - 1;          /* 110 */
+console.log(n); // 110
+
+console.log(2 + 3 + 4 + "5");   // 95
+console.log("10" - "4" - "3" - 2 + "5");    // 15
+
+
+/* Truthy and Falsy Values */
+
+// 5 falsy values: 0, '', undefined, null, NaN
+
+console.log(Boolean(0));    // false
+console.log(Boolean(-5));   // true
+console.log(Boolean(10));   // true
+console.log(Boolean(''));   // false
+console.log(Boolean('Shabd'));  // true
+console.log(Boolean(undefined));    // false
+console.log(Boolean(null)); // false
+console.log(Boolean(NaN));  // false
+console.log(Boolean({}));   // true     /* empty object */
+
+let money = 0;
+if (money) {
+    console.log("Don't spend it all.");
+} else {
+    console.log("You should get a job.");   // You should get a job.
+}
+
+money = 100;
+if (money) {
+    console.log("Don't spend it all."); // on't spend it all.
+} else {
+    console.log("You should get a job.");
+}
+
+let height = undefined;
+if (height) {
+    console.log("YAY! Height is defined.");
+} else {
+    console.log("Height is undefined.");    // Height is undefined
+}
+
+height = 123;
+if (height) {
+    console.log("YAY! Height is defined."); // YAY! Height is defined.
+} else {
+    console.log("Height is undefined.");
+}
+
+height = 0;
+if (height) {
+    console.log("YAY! Height is defined.");
+} else {
+    console.log("Height is undefined.");    // Height is undefined
+}
