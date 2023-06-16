@@ -230,7 +230,7 @@ if (money) {
 
 money = 100;
 if (money) {
-    console.log("Don't spend it all."); // on't spend it all.
+    console.log("Don't spend it all."); // Don't spend it all.
 } else {
     console.log("You should get a job.");
 }
@@ -239,7 +239,7 @@ let height = undefined;
 if (height) {
     console.log("YAY! Height is defined.");
 } else {
-    console.log("Height is undefined.");    // Height is undefined
+    console.log("Height is undefined.");    // Height is undefined.
 }
 
 height = 123;
@@ -253,5 +253,32 @@ height = 0;
 if (height) {
     console.log("YAY! Height is defined.");
 } else {
-    console.log("Height is undefined.");    // Height is undefined
+    console.log("Height is undefined.");    // Height is undefined.
+}
+
+/* Equality Operators: == vs. === */
+
+const age = 18;
+if (age === 18) console.log("You just became an adult. (strict equality)"); // You just became an adult. (strict equality)
+if (age == 18) console.log("You just became an adult. (loose equality)");   // You just became an adult. (loose equality)
+
+console.log(18 === 18); // true
+console.log(18 == 19);  // false
+console.log(18 === '18');   //false
+console.log(18 == '18');    // true
+
+const favNumber = prompt("What's your favourite number ?"); // What's your favourite number ? 23 ↲
+console.log(favNumber); // 23
+console.log(typeof favNumber);  // string
+
+if (favNumber == 23) {  /* '23' == 23  -> true */
+    console.log("Cool! 23 is an amazing number.");  // Cool! 23 is an amazing number.
+} else if (favNumber == 7) {
+    console.log("7 is a cool number.");
+} else {
+    console.log('"Number is not 23 or 7');
+}
+
+if (favNumber !== 23) { /* '23' !== 23  ->  true (strict not equal)*/
+    console.log("Why not 23 ?");    // Why not 23 ?
 }
